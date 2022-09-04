@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Repositories\" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Features\" />
+    <None Remove="Features\ProgrammingLanguages\" />
+    <None Remove="Features\ProgrammingLanguages\Rules\" />
+    <None Remove="Features\ProgrammingLanguages\Queries\" />
+    <None Remove="Features\ProgrammingLanguages\Commands\" />
+    <None Remove="Features\ProgrammingLanguages\Commands\CreateProgrammingLanguageCommand\" />
+    <None Remove="Features\ProgrammingLanguages\Dtos\" />
+    <None Remove="Features\ProgrammingLanguages\Profiles\" />
+    <None Remove="Features\ProgrammingLanguages\Models\" />
+    <None Remove="Features\ProgrammingLanguages\Queries\GetListProgrammingLanguage\" />
+    <None Remove="Features\ProgrammingLanguages\Queries\GetByIdProgrammingLanguage\" />
+    <None Remove="Features\ProgrammingLanguages\Commands\DeleteProgrammingLanguage\" />
+    <None Remove="Features\ProgrammingLanguages\Commands\UpdateProgrammingLanguageCommand\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Repositories\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\ProgrammingLanguages\" />
+    <Folder Include="Features\ProgrammingLanguages\Rules\" />
+    <Folder Include="Features\ProgrammingLanguages\Queries\" />
+    <Folder Include="Features\ProgrammingLanguages\Commands\" />
+    <Folder Include="Features\ProgrammingLanguages\Commands\CreateProgrammingLanguageCommand\" />
+    <Folder Include="Features\ProgrammingLanguages\Dtos\" />
+    <Folder Include="Features\ProgrammingLanguages\Profiles\" />
+    <Folder Include="Features\ProgrammingLanguages\Models\" />
+    <Folder Include="Features\ProgrammingLanguages\Queries\GetListProgrammingLanguage\" />
+    <Folder Include="Features\ProgrammingLanguages\Queries\GetByIdProgrammingLanguage\" />
+    <Folder Include="Features\ProgrammingLanguages\Commands\DeleteProgrammingLanguage\" />
+    <Folder Include="Features\ProgrammingLanguages\Commands\UpdateProgrammingLanguageCommand\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.Application\Core.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+</Project>

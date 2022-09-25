@@ -26,21 +26,17 @@
     <None Remove="Features\ProgrammingLanguages\Commands\UpdateProgrammingLanguageCommand\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="Services\Repositories\" />
-    <Folder Include="Features\" />
-    <Folder Include="Features\ProgrammingLanguages\" />
     <Folder Include="Features\ProgrammingLanguages\Rules\" />
     <Folder Include="Features\ProgrammingLanguages\Queries\" />
-    <Folder Include="Features\ProgrammingLanguages\Commands\" />
-    <Folder Include="Features\ProgrammingLanguages\Commands\CreateProgrammingLanguageCommand\" />
+    <Folder Include="Features\ProgrammingLanguages\Commands\CreateProgrammingLanguage\" />
     <Folder Include="Features\ProgrammingLanguages\Dtos\" />
     <Folder Include="Features\ProgrammingLanguages\Profiles\" />
     <Folder Include="Features\ProgrammingLanguages\Models\" />
     <Folder Include="Features\ProgrammingLanguages\Queries\GetListProgrammingLanguage\" />
     <Folder Include="Features\ProgrammingLanguages\Queries\GetByIdProgrammingLanguage\" />
     <Folder Include="Features\ProgrammingLanguages\Commands\DeleteProgrammingLanguage\" />
-    <Folder Include="Features\ProgrammingLanguages\Commands\UpdateProgrammingLanguageCommand\" />
+    <Folder Include="Features\ProgrammingLanguages\Commands\UpdateProgrammingLanguage\" />
+    <Folder Include="Features\ProgrammingTechnologies\Rules\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
